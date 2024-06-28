@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
-    <link rel="stylesheet" href="Style.css">
-    <!--Font Awesome CDN-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <div class="slide">
-             <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
                 <div class="content">
                     <div class="name">Switzerland</div>
                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
@@ -41,7 +48,7 @@
             </div>
             <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
                 <div class="content">
-                    <div class="name">Netherland</div>
+                    <div class="name">Netherlands</div>
                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                     <button>See More</button>
                 </div>
@@ -53,9 +60,10 @@
                     <button>See More</button>
                 </div>
             </div>
-            <div class="button">
-            <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="button-container">
+                <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
         </div>
     </div>
     <script src="App.js"></script>
